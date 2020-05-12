@@ -26,6 +26,7 @@ function App() {
       <UserProvider value="Priyesha">
       <Parent/>
       </UserProvider>
+      <Parent/>
     </div>
   );
 }
