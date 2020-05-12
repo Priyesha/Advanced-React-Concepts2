@@ -7,6 +7,7 @@ import ClickCounter from './components/ClickCounter'
 import HoverComponent from './components/HoverComponent';
 import Parent from './components/Parent';
 import {UserProvider} from './components/context';
+import HTTPGetDemo from './components/httpGetDemo';
 
 function App() {
   return (
@@ -23,10 +24,11 @@ function App() {
         <HoverComponent count={count} incrementCount={incrementCount}/>
       )}
       </Counter>  */}
-      <UserProvider value="Priyesha">
+      {/* <UserProvider value="Priyesha">
       <Parent/>
       </UserProvider>
-      <Parent/>
+      <Parent/> */}
+      <HTTPGetDemo/>
     </div>
   );
 }
