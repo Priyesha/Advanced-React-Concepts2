@@ -8,6 +8,7 @@ import HoverComponent from './components/HoverComponent';
 import Parent from './components/Parent';
 import {UserProvider} from './components/context';
 import HTTPGetDemo from './components/httpGetDemo';
+import HTTPPostDemo from './components/httpPostDemo';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       <Parent/>
       </UserProvider>
       <Parent/> */}
-      <HTTPGetDemo/>
+      {/* <HTTPGetDemo/> */}
+      <HTTPPostDemo/>
     </div>
   );
 }
