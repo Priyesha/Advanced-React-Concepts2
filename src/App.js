@@ -10,13 +10,17 @@ function App() {
   return (
     <div className="App">
       <FunctProps name={(isLoggedIn) => isLoggedIn? 'Priyesha' : 'User'}/>
-      <Counter render={(count, incrementCount) => (
+      <Counter> 
+      {(count, incrementCount) => (
         <ClickCounter count={count} incrementCount={incrementCount}/>
-      )}/> 
-
-      <Counter render={(count, incrementCount) => (
+      )}
+     </Counter>
+     
+      <Counter>
+      {(count, incrementCount) => (
         <HoverComponent count={count} incrementCount={incrementCount}/>
-      )}/>
+      )}
+      </Counter> 
     </div>
   );
 }
